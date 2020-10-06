@@ -1,13 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap');
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.each-slide-image {
+  height: 100%;
+  min-height: 80vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.slide-container {
+  width: 100%;
+  position: relative;
+}
+
+/* Navbar */
+
+.navbar {
+  z-index: 20;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background: white;
+  transition: 0.1s ease-in-out;
+  position: fixed;
+  padding: 15px 0;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navbar.active {
+  padding: 7px 0 !important;
+  background: white;
+  padding: 0 0;
+  box-shadow: 0px 2px 11px -9px rgba(0,0,0,0.75);
+}
+
+
+.navbar-links {
+  max-width: 100%;
+  overflow: hidden;
+  opacity: 1;
+  width: 33.3%;
+}
+
+.home-logo {
+  width: 33.3%;
+  justify-content: center;
+  display: flex;
+}
+
+.cart-logo {
+  width: 33.3%;
+  justify-content: flex-end;
+  display: flex;
+}
+
+.navbar.active .navbar-links{
+  color: black;
+}
+
+
+.navbar-links-p {
+  margin: 0 2em 0 0;
+}
+
+.cart-items {
+  position: absolute;
+  right: -1px;
+  background: var(--primaryColor);
+  padding: 0 5px;
+  border-radius: 30%;
+  color: var(--mainWhite);
+}
+
+/* Hero-Slide */
+
+.slide-container {
+  position: relative;
+  height: 100%;
+}
+
+.hero-info {
+  z-index: 10000000;
+  border: solid black;
+  position: absolute;
+}
+
+.each-slide {
+  height: 100%;
+}
+
+.each-slide__content {
+  height: 80%;
+  display: flex;
+  align-items: center;
+}
+
+.each-slide__content h1 {
+  font-weight: 300;
+  font-size: 72px;
+  color: white;
+  text-transform: uppercase;
+  word-spacing: 100vw;
+  margin: auto;
+}
+
+.product-desc {
+  text-decoration: none;
+}
+
+
+/* Tabs */
+
+.tabs-container {
+  background: white;
+  padding: 20px 0;
+  margin: 0 5px 20px;
+}
+
+.tabs-container__info {
+  width: 100%;
+  max-width: 50%;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  font-weight: 800;
+  padding: 20px 0;
+}
+
+.product-price {
+  text-align: center;
+}
+
+.product-title {
+  text-align: center;
+}
+
+.tabs-section__info h1{
+  margin: 0;
+  font-weight: 800;
+}
+
+.react-tabs {
+  width: 100%;
+  margin: 50px auto;
+}
+
+.react-tabs__tab-list {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  max-width: 400px;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+
+.react-tabs__tab {
+  cursor: pointer;
+  color: #b6b6b6;
+  transition: 0.5 ease-in-out;
+}
+
+.react-tabs__tab--selected {
+  font-weight: bolder;
+  color: black;
+}
+
+/* Discount section */
+
+.discount-section {
+  background: rgb(241, 242, 244);
+  padding: 20px 0;
+  margin: 0 5px 20px;
+}
+
+.discount-section__container{
+  padding: 7.5rem 0px;
+  display: flex;
+  width: 100%;
+}
+
+.discount-section__slides {
+  height: 100%;
+  min-height: 200px;
+  width: calc(100% / 2);
+}
+
+.discount-section__tabs {
+  width: calc(100% / 2);
+  display: flex;
+}
+
+.discount-section__cards {
+  width: 100%;
+  max-width: 200px;
+  background: white;
+  border-radius: 10px;
+  list-style: none;
+  padding: 30px;
+  margin: 20px;
+  box-shadow: 0px 0px 28px -5px rgba(0,0,0,0.25);
+}
+
+/* Footer */
+.footer-container {
+  border-top: solid 1px rgb(241, 242, 244);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 10px;
+  row-gap: 1em;
+}
+
+@media only scren and (max-width: 786px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.footer-container__subtitle {
+  font-weight: 800; 
+  font-size: 18px;
+  margin-top: 0;
+}
+
+.footer-container__list {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+}
+
+.footer-container__list li {
+  justify-content: space-evenly;
+  padding: 5px  0;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.footer-container__list svg {
+  vertical-align: bottom;
+}
+
+.footer-container__list p{
+  justify-content: space-evenly;
+  padding: 5px  0;
+  font-size: 12px;
+  margin: 0;
 }
