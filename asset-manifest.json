@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/shopify-project/static/css/main.9f3a9c99.chunk.css",
+    "main.js": "/shopify-project/static/js/main.3d759d5e.chunk.js",
+    "main.js.map": "/shopify-project/static/js/main.3d759d5e.chunk.js.map",
+    "runtime-main.js": "/shopify-project/static/js/runtime-main.8bc4e13f.js",
+    "runtime-main.js.map": "/shopify-project/static/js/runtime-main.8bc4e13f.js.map",
+    "static/css/2.69507427.chunk.css": "/shopify-project/static/css/2.69507427.chunk.css",
+    "static/js/2.f0638810.chunk.js": "/shopify-project/static/js/2.f0638810.chunk.js",
+    "static/js/2.f0638810.chunk.js.map": "/shopify-project/static/js/2.f0638810.chunk.js.map",
+    "index.html": "/shopify-project/index.html",
+    "precache-manifest.9ba518d3ec087a9a37acd7479ac5a410.js": "/shopify-project/precache-manifest.9ba518d3ec087a9a37acd7479ac5a410.js",
+    "service-worker.js": "/shopify-project/service-worker.js",
+    "static/css/2.69507427.chunk.css.map": "/shopify-project/static/css/2.69507427.chunk.css.map",
+    "static/css/main.9f3a9c99.chunk.css.map": "/shopify-project/static/css/main.9f3a9c99.chunk.css.map",
+    "static/js/2.f0638810.chunk.js.LICENSE.txt": "/shopify-project/static/js/2.f0638810.chunk.js.LICENSE.txt",
+    "static/media/slide-1.jpg": "/shopify-project/static/media/slide-1.f8f0a6f9.jpg",
+    "static/media/slide-2.jpg": "/shopify-project/static/media/slide-2.e6636915.jpg",
+    "static/media/slide-3.jpg": "/shopify-project/static/media/slide-3.074e490e.jpg",
+    "static/media/slide-4.jpg": "/shopify-project/static/media/slide-4.cbc588e1.jpg",
+    "static/media/slide-5.jpg": "/shopify-project/static/media/slide-5.a563605e.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8bc4e13f.js",
+    "static/css/2.69507427.chunk.css",
+    "static/js/2.f0638810.chunk.js",
+    "static/css/main.9f3a9c99.chunk.css",
+    "static/js/main.3d759d5e.chunk.js"
+  ]
+}
